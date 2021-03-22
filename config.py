@@ -1,3 +1,9 @@
+# Author: Deendayal Kumawat
+"""
+Date: 05/02/21
+Descriptions: AI Assistance(Jarvis)
+"""
+
 # Email
 userEmail= ""
 passwordEmail = ""

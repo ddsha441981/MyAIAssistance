@@ -1,3 +1,9 @@
+# Author: Deendayal Kumawat
+"""
+Date: 05/02/21
+Descriptions: AI Assistance(Jarvis)
+"""
+
 # Email
 from email.encoders import encode_base64
 from email.mime.base import MIMEBase

@@ -1,3 +1,9 @@
+# Author: Deendayal Kumawat
+"""
+Date: 05/02/21
+Descriptions: AI Assistance(Jarvis)
+"""
+
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'assistance_gui.ui'
