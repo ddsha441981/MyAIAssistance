@@ -165,7 +165,7 @@ def checking_weather():
 # Checking Weather using command
 def weather(self):
     try:
-        api_key = "5957875d5b49b8024c0588be0b4309a6"  # generate your own api key from open weather
+        api_key = "HVL5LL-xxxxxxxxxx"  # generate your own api key from open weather
         base_url = "http://api.openweathermap.org/data/2.5/weather?"
         speak("tell me which city")
         city_name = self.takeCommand().lower()
@@ -386,7 +386,6 @@ def pdf_reader():
                     select_pdf_file = f"H:\\Pycharm Code\\assistance\\pdf\\{file_pdf_user}"
 
                     with open(select_pdf_file, "rb") as pdf_file_reading:
-                        # print("222222222222222222222",f)
                         pdfReader = PyPDF2.PdfFileReader(pdf_file_reading)
                         pages = pdfReader.numPages
                         speak(
@@ -637,7 +636,6 @@ def open_application(query):
 
 # Automation Opening Web
 def opening_web(self, webquery):
-    print(webquery + "/////////////////////////////////////////////")
     try:
         # __________________________________ Open LinkedIn __________________________________________
         if 'linkedin' in webquery:
@@ -1443,7 +1441,7 @@ class MainThread(QThread):
             # query = takeCommand().lower()
             self.query = self.takeCommand()
             # _____________________________ _____Main Logic for Jarvis __________________________________
-            # api_key = "5957875d5b49b8024c0588be0b4309a6" Weather API Key Open Weather
+            # api_key = "HVL5LL-xxxxxxxxxx" Weather API Key Open Weather
             # __________________________________Opening Any Application ___________________________________________
             if 'open' in self.query:
                 speak('Sure Sir')
@@ -1532,7 +1530,6 @@ class MainThread(QThread):
                     # Error listening timed out while waiting for phrase to start
                     speak('which type of data you want to see... state wise or district wise')
                     select_data = self.takeCommand().lower()
-                    print("jjjjjjjjjjjjjjjjjj", select_data)
                     if 'state wise' in select_data:
                         speak('Checking Covid-19 data of India for all state ...')
                         calling_all_state_wise()
@@ -2034,7 +2031,7 @@ class MainThread(QThread):
 
                 # Use the same API key
                 # that we have generated earlier
-                appId = "HVL5LL-89PY69U3AY"
+                appId = "HVL5LL-xxxxxxxxxx"
                 client = wolframalpha.Client(appId)
                 res = client.query(self.query)
 
