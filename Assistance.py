@@ -171,7 +171,7 @@ def checking_weather():
 # Checking Weather using command
 def weather(self):
     try:
-        api_key = "HVL5LL-xxxxxxxxxx"  # generate your own api key from open weather
+        api_key = "xxxxxx-xxxxxxxxxx"  # generate your own api key from open weather
         base_url = "http://api.openweathermap.org/data/2.5/weather?"
         speak("tell me which city")
         city_name = self.takeCommand().lower()
@@ -269,9 +269,9 @@ def cpu():
 
 # News
 def news():
-    try:  # ac958c77ea74407fa173d5772e2ec123
+    try:  # 
         jsonObj = urlopen(
-            'https://newsapi.org/v2/top-headlines?country=in&apiKey=ac958c77ea74407fa173d5772e2ec123')
+            'https://newsapi.org/v2/top-headlines?country=in&apiKey=xxxxxxxxxxxxxxxxx')
         data = json.load(jsonObj)
         i = 1
 
@@ -1447,7 +1447,7 @@ class MainThread(QThread):
             # query = takeCommand().lower()
             self.query = self.takeCommand()
             # _____________________________ _____Main Logic for Jarvis __________________________________
-            # api_key = "HVL5LL-xxxxxxxxxx" Weather API Key Open Weather
+            # api_key = "xxxxxx-xxxxxxxxxx" Weather API Key Open Weather
             # __________________________________Opening Any Application ___________________________________________
             if 'open' in self.query:
                 speak('Sure Sir')
@@ -2037,7 +2037,7 @@ class MainThread(QThread):
 
                 # Use the same API key
                 # that we have generated earlier
-                appId = "HVL5LL-xxxxxxxxxx"
+                appId = "xxxxxx-xxxxxxxxxx"
                 client = wolframalpha.Client(appId)
                 res = client.query(self.query)
 
